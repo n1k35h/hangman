@@ -8,6 +8,7 @@ while True:
     if len(guess) == 1 and guess.isalpha():
         if guess in word:
             print(f"Good guess ,{guess}, is in the word.")
+            break
         else:
             print(f"Sorry, {guess} is not in the word")
     print(word)
