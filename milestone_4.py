@@ -11,7 +11,7 @@ class Hangman():    # hangman class
     def __init__(self, word_list, num_lives=5):  # setting up the initialiser and the attributes
         self.word = word
         self.word_guessed = ['_'] * len(set(word))
-        self.num_letters = len(set(word))
-        self.num_lives = num_lives
+        self.num_letters = int
+        self.num_lives = int
         self.word_list = word_list
         self.list_of_guesses = []
