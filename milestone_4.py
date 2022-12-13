@@ -8,7 +8,7 @@ num_lives = 5   # number of lives starting from 5
 list_of_guesses = []    # this is an empty list where it will store letter that have already been guessed
 
 class Hangman():    # hangman class
-    def __init__(self, word_list, num_lives=5):  # setting up the initialiser and the attributes
+    def __init__(self, word_list, word, num_lives=5):  # setting up the initialiser and the attributes
         self.word_list = word_list
         self.num_lives = num_lives
         self.word = word
