@@ -1,6 +1,6 @@
 import random # importing the random module from the python library
 
-word_list = ['Apple', 'Banana', 'Strawberry', 'Orange', 'Pear'] # list of fruit
+#word_list = ['Apple', 'Banana', 'Strawberry', 'Orange', 'Pear'] # list of fruit
 
 class Hangman():    # hangman class
     def __init__(self, word_list, num_lives=5):  # setting up the initialiser and the attributes
