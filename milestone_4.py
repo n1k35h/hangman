@@ -6,5 +6,5 @@ class Hangman():    # hangman class
         self.word_guessed = "_" * len(set(word))  # '_' = underscore will display depending on the length of the word 
         self.num_letters = len(set(self.word))
         self.num_lives = num_lives
-        self.word_list = word_list
+        self.word_list = word_list = ['Apple', 'Banana', 'Strawberry', 'Orange', 'Pear'] # list of fruit
         self.list_of_guesses = []
