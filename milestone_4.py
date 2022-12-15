@@ -26,6 +26,7 @@ class Hangman():
                 else:
                     self.check_guess(guess)
                     self.list_of_guesses.append(guess)
-
+                    break
+                    
 game = Hangman(word_list=['apple', 'banana', 'orange', 'strawberry', 'blueberry'], num_lives=5)
 game.ask_for_input()
