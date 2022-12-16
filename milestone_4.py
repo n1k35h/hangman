@@ -20,12 +20,12 @@ class Hangman():
             guess = input("Please enter a single letter: ")
             if len(guess) != 1 and not guess.isalpha():
                 print("Invalid letter. Please, enter a single alphabetical character.")
-                elif guess in self.list_of_guesses:
-                    print("You already tried that letter!")
-                else:
-                    self.check_guess(guess)
-                    self.list_of_guesses.append(guess)
-                    break
+            elif guess in self.list_of_guesses:
+                print("You already tried that letter!")
+            else:
+                self.check_guess(guess)
+                self.list_of_guesses.append(guess)
+                break
 
 game = Hangman(word_list=['apple', 'banana', 'orange', 'strawberry', 'blueberry'], num_lives=5)
 game.ask_for_input()
