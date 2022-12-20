@@ -37,18 +37,18 @@ class Hangman():
                 self.list_of_guesses.append(guess)
                 break
 
-def play_game(self, word_list):
+def play_game(word_list):
     game = Hangman
     game(word_list, num_lives=5)
     while True:
-        if self.num_lives == 0:
+        if num_lives == 0:
             print("You lost!")
-        elif self.num_letters > 0:
-            self.ask_for_input()
+        elif num_letters > 0:
+            ask_for_input()
             continue
-        elif self.num_lives != 0 and not self.num_letters > 0:
+        elif num_lives != 0 and not num_letters > 0:
             print("Congratulations. You won the game!")
         else:
             break
 
-    self.play_game(word_list=['apple', 'banana', 'orange', 'strawberry', 'blueberry'])
+play_game(word_list=['apple', 'banana', 'orange', 'strawberry', 'blueberry'])
