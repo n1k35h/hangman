@@ -38,17 +38,19 @@ class Hangman():
                 break
 
 def play_game(word_list):
-    game = Hangman
-    game(word_list, num_lives=5)
+    game = Hangman(word_list, num_lives=5)
     while True:
-        if num_lives == 0:
+        if game.num_lives == 0:
             print("You lost!")
-        elif num_letters > 0:
-            ask_for_input()
+            break
+        elif game.num_letters > 0:
+            game.ask_for_input()
             continue
-        elif num_lives != 0 and not num_letters > 0:
+        elif game.num_lives != 0 and not game.num_letters > 0:
             print("Congratulations. You won the game!")
+            break
         else:
             break
 
-play_game(word_list=['apple', 'banana', 'orange', 'strawberry', 'blueberry'])
+word_list=['apple', 'banana', 'orange', 'strawberry', 'blueberry']
+play_game(word_list)
