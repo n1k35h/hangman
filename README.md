@@ -35,3 +35,8 @@ In the third defined method called ask_for_input, where it will ask the player t
 
 In line 40, the game variable is created to pass the class Hangman object where in the parentheses it has couple of parameters called word_list and num_lives.
 In line 41, the game variable is calling for ask_for_input method to run the code - game.ask_for_input()
+
+In milestone_5.py file, play_game function is created with word_file passed as a parameter. On line 41 an instance of the Hangman class is assign to a variable called game. Where the word_list and num_lives=5 is pass as an argument to the game object. On line 42 a while loop is created where condition is set to True. Whilst in the while loop an if statement is created where if the num_lives is equal to 0 then the print statement is printed "You Lost" and this will break the while loop. On line 46, it will check if the num_letter is greater than 0 then the game will continue by calling the ask_for_input() method. This will continue until the player lose all 5 lives or guess the word correctly. The final if statement will be called if the num_lives is not 0 and the num_letters is not greater than 0 then the player has won the game and the print statement is printed "Congratulation. You won the game." Once the player has won the game it should break the while loop.
+
+In line 55, the word_list is created as a variable with list of fruit passed as a string in-between the square brackets
+In line 56, the play_game is called with the word_list passed as an argument in the parentheses
